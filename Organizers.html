@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,maximum-scale=2">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+  <style>
+    /*兼容浏览器*/
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+    }
+
+    .content-left {
+      width: 20%;
+      height: 100%;
+      /* background-color: #9ec5d169; */
+      float: left;
+    }
+
+    .content-right {
+      width: 80%;
+      height: 100%;
+      /* height: 600px; */
+      /* background-color: #6495ED; */
+      float: left;
+      position: relative;
+      z-index: 9999
+    }
+
+    .left-title {
+      width: 100%;
+      height: 50px;
+    }
+
+    .left-title>a {
+      display: block;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      /* color: white; */
+      /*去掉a下默认下划线*/
+      text-decoration: none;
+    }
+
+    /*分割线*/
+    .seg {
+      height: 1px;
+      width: 100%;
+      /* background-color: black; */
+    }
+
+    .nav {
+      /*上下5,左右0*/
+      margin: 5px 0;
+    }
+
+    /*菜单项主标题*/
+    .nav-title {
+      height: 40px;
+      width: 100%;
+      /* color: white; */
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+    }
+
+    /*子标题内容区*/
+    .nav-content {
+      width: 100%;
+      height: 100%;
+      /* background-color: #0C1119; */
+    }
+
+    /*子标题的样式*/
+    .nav-content>a {
+      display: block;
+      width: 100%;
+      height: 30px;
+      /* color: #CCCCCC; */
+      text-decoration: none;
+      text-align: center;
+      line-height: 30px;
+      font-size: 13px;
+    }
+
+    /*子标题鼠标经过时的改变颜色*/
+    .nav-content>a:hover {
+      /* color: #FFFFFF; */
+      /* background-color: #12040c; */
+    }
+
+    /*内容区*/
+    .content-right {
+      /* font-size: 0px; */
+      /* line-height: 10px; */
+      /* text-align: center; */
+    }
+
+    .sboto ul li{
+      margin-left: 15px;
+    }
+
+  </style>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+  <title>The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models | held
+    with 2026 IEEE International Conference on Big Data</title>
+  <meta name="generator" content="Jekyll v3.9.3" />
+  <meta property="og:title"
+    content="The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="held with 2026 IEEE International Conference on Big Data" />
+  <meta property="og:description" content="held with 2026 IEEE International Conference on Big Data" />
+  <link rel="canonical" href="https://rhwbrhw.github.io/" />
+  <meta property="og:url" content="https://rhwbrhw.github.io/" />
+  <meta property="og:site_name"
+    content="The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title"
+    content="The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models" />
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"held with 2026 IEEE International Conference on Big Data","headline":"The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models","name":"The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models","url":"https://rhwbrhw.github.io/"}</script>
+  <!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <!-- <ul class="sidebar">
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#Submissions">Submissions</a></li>
+      <li><a href="#topics-of-interest">Topics of Interest</a></li>
+      <li><a href="#proceedings">Proceedings</a></li>
+      <li><a href="#submission-instructions">Submission Instructions</a></li>
+      <li><a href="#important-dates">Important Dates</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      
+    </ul> -->
+
+
+
+
+
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+
+      <h1 id="project_title">The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models</h1>
+
+      <!-- <script src = "jquery-3.6.0.js"></script> -->
+
+
+      <!-- <script src = "https://code.jquery.com/jquery-3.2.1.min.js"
+                  integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                  crossorigin = "anonymous"></script> -->
+
+      <!-- <script>
+              $(function () {
+  
+                  //隐藏所有子标题
+                  $(".nav-menu").each(function () {
+                      $(this).children(".nav-content").hide();
+                  });
+  
+                  //给菜单项中的所有主标题绑定事件
+                  $(".nav-title").each(function () {
+                      //获取点击当前标签下所有子标签
+                      var navConEle = $(this).parents(".nav-menu").children(".nav-content");
+  
+                      //绑定点击事件,判断navConEle的display这个属性是否为none,时none的话时隐藏状态
+                      $(this).click(function(){
+                          if (navConEle.css("display") != "none") {
+                              //隐藏,传参数自带动画,单位为毫秒
+                              navConEle.hide(300);
+                          } else {
+                              //显示,传参数自带动画,单位为毫秒
+                              $(".nav-menu").each(function () {
+                                  $(this).children(".nav-content").hide(300);
+                              });
+                              navConEle.show(300);
+                          }
+                      });
+                  });
+  
+                  $(".nav-content>a").each(function () {
+                      $(this).click(function () {
+                          $(".content-right").html($(this).html());
+                      });
+                  });
+  
+              });
+          </script> -->
+    </header>
+  </div>
+
+  <!--index-->
+  <div class="content">
+    <!--左侧导航栏-->
+    <div class="content-left">
+      <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+          <!-- <div class = "left-title">
+                  <a href = "#">xx后台</a>
+              </div> -->
+
+          <!--水平线-->
+          <div class="seg"></div>
+
+          <!--菜单栏导航-->
+          <div class="nav">
+            <!--每一个菜单栏项-->
+            <div class="nav-menu">
+              <!--主标题-->
+              <div class="nav-title"><a href="index.html">Introduction</a></div>
+              <!-- 子标题
+                      <div class = "nav-content">
+                          <a href = "#">商品列表</a>
+                          <a href = "#">添加商品</a>
+                      </div> -->
+            </div>
+
+            <!--每一个菜单栏项-->
+            <div class="nav-menu">
+              <!--主标题-->
+              <div class="nav-title"><a href="Submissions.html">Submissions</a></div>
+              <!-- 子标题
+                      <div class = "nav-content">
+                          <a href = "#">订单查看</a>
+                          <a href = "#">订单排序</a>
+                      </div> -->
+            </div>
+
+            <!--每一个菜单栏项-->
+            <div class="nav-menu">
+              <!--主标题-->
+              <div class="nav-title"><a href="Organizers.html">Organizers</a></div>
+              <!-- 子标题
+                      <div class = "nav-content">
+                          <a href = "#">类目查看</a>
+                          <a href = "#">类目删除</a>
+                      </div> -->
+            </div>
+            <div class="nav-menu">
+              <!--主标题-->
+              <div class="nav-title"><a href="keynotespeaker.html">Keynote Speakers</a></div>
+              <!-- 子标题
+                <div class = "nav-content">
+                    <a href = "#">类目查看</a>
+                    <a href = "#">类目删除</a>
+                </div> -->
+              </div>
+            <div class="nav-menu">
+                            <!--主标题-->
+                            <div class="nav-title"><a href="pastworkshopd.html">Past Workshops</a></div>
+                            <!-- 子标题
+                              <div class = "nav-content">
+                                  <a href = "#">类目查看</a>
+                                  <a href = "#">类目删除</a>
+                              </div> -->
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--水平线-->
+      <!-- <div class = "seg"></div> -->
+    </div>
+
+    <!--右侧内容区-->
+    <div class="content-right">
+      <!-- MAIN CONTENT -->
+      <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+          <p><img src="image/bigdata_1.jpg" alt="Branching" /></p>
+
+
+          <h1 id="organizers">Organizers</h1>
+
+          <p>All the organizers are experts in the field of Data Mining、Computer Vision and Large Language Models , and have extensive experience in holding or participating in top conferences. Therefore, we believe that if we can hold this workshop, we will be able to attract high-quality submissions.</p>
+          <!-- <div class="sboto">
+          <h3 id="short-bio-of-the-organizers">Short bio of the organizers</h3>
+          <h4><li>Jinli Zhang</li></h4>
+          <ul>
+            <p>Jinli Zhang (Member, IEEE) received the Ph.D. degree from Beijing University of Technology, China. She was as a researcher at Drexel University, USA. She has published 15 SCI journals, 4 invention patents. Her research interests are in Artificial Intelligence, Machine Learning, Data/Text/Web Mining. Her professional services are as follows</p>
+            <li>Methods(April 21, 2020-present) - Guest editors (影响因子：3.8)</li>
+            <li>Machine Learning Research - Editorial Member(From June 18, 2019 to June 18, 2021;From August 4, 2021 to August 5, 2022)</li>
+            <li>IEEE International Conference Bioinformatics and Biomedicine(BIBM) 2020- Program committee</li>
+            <li>2021 International Conference On Computational Intelligence and Security – Special co-Chair</li>
+            <li>The 2nd International Conference on Robotics, Automation and Intelligent Control（ICRAIC 2022）---Peer Reviewer</li>
+            <li>The 2nd International Conference on Image, Vision and Intelligent Systems (ICIVIS 2022)—Workshop 1 co-Chair</li>
+            <li>The 24th IEEE International Conference on High Performance Computing & Communications (HPCC-2022)--- Special Session: Applications of Data Science and Emerging Technologies----PC</li>
+            <li>IEEE International Conference Bioinformatics and Biomedicine(BIBM) 2022- Program committee</li>
+          </ul>
+          <h4><li>Xuemin Lin</li></h4>
+          <ul>
+            <p>Science and Engineering at the University of New South Wales. Currently, he is the head of data and knowledge research group in the School of Computer Science and Engineering at UNSW. Xuemin is a fellow of IEEE. Xuemin got his PhD in Computer Science from the University of Queensland (Australia) in 1992 and his BSc in Applied Math from Fudan University (China) in 1984. During 1984-1988, he studied for PhD in Applied Math at Fudan University.</p>
+            <p>the University of Western Australia in Nov 1994 after a 2 years research fellow appointment at the University of Queensland. He joined the School of Computer Science and Engineering at the University of New South Wales in Nov 1997. In 2005, he was a visiting researcher in Microsoft Asia Research Lab and visited Tokyo University as a JSPS fellow. He is a distinguished visiting Professor at Tsinghua University and a visiting Chair Professor at Fudan University. He has been an adiunct Professor at East Normal University, Zhejiang Gongshang University, and Guangzhou University. Xuemin currently is the Editor-in-Chief of IEEE Transactions on Knowledge and Data Engineering. an Associate Editor-in-Chief of IEEE Transactions on Knowledge and Data Engineering. He was an associate editor of ACM Transactions on Database Systems (2008-2014) and an associate editor of IEEE Transactions on Knowledge and Data Engineering (2013 Feb - 2015 Jan).</p>
+            <p>His teaching covered a quite range of courses at different leveles. He also supervised many graduate students. Xuemin Lin's principal research areas are databases and graph visualisation .</p>
+            <li>In databases, his research areas include data mining, data streams, distributed database systems, spatial database systems, and web databases. Currently, he is working on data streams,, approximate query processing, spatial data processing , probabilistic queries, Graph Databases , and web information processing.</li>
+            <li>Graph visualisation is to display a graph according to the aesthetics from applications; for example, one may wish to draw a graph symmetrically if possible. Graph visualisation serves as a tool in many applications. A number of topics have been covered by Xuemin in graph drawing, which include drawing trees, undirected graphs, directed graphs, and hierarchical graphs. Xuemin's main focus has been on understanding inherent difficulties of drawing problems, and then developing effective drawing algorithms.</li>
+          </ul>
+          <h4><li>Yongduan Song</li></h4>
+          <ul>
+            <p>David Yongduan Song, Fellow of IEEE, Fellow of International Eurasian Academy of Sciences, Fellow of Chinese Automation Association.</p>
+            <p>He received his Ph.D. degree in electrical and computer engineering from Tennessee Technological University, Cookeville, TN, USA, in 1992. He held a tenured full professor position with North Carolina Agricultural and Technical State University, Greensboro, NC, USA, from 1996 to 2008, and a Langley Distinguished Professor position with the National Institute of Aerospace, Hampton, VA, USA, from 2005 to 2008. He was one of the six Langley Distinguished Professors with the National Institute of Aerospace (NIA), and the Founding Director of the Center for Cooperative Systems with NIA. He is currently the Dean of the School of Automation, Chongqing University, Chongqing, China, and the Founding Director of the Institute of Smart Engineering, Chongqing University.</p>
+            <p>Dr. Song is a leading researcher in neural networks (NN) based adaptive control, significantly contributing to both NN theory methods and engineering applications. He is very active as associate editors for top IEEE journals, including IEEE Trans. on Neural Networks, IEEE Trans. on Automatic Control, IEEE Trans. Systems, Man, and Cybernetics, IEEE Trans. on Intelligent Transportation Systems, IEEE Trans. on Cognitive and Developmental Systems. As a scientific leader in the field of systems and control, he has been serving on various national and international technical committees.</p>
+            <p>Prof. Song has made original contributions in neural network adaptive control of nonlinear systems with real world applications, which can be assessed by his publications (over 200 papers) in prestigious international journals, including IEEE T-NNLS, IEEE T-FS, IEEE T-SMC, IEEE T-Cybernetics, IEEE T-AC, IEEE T-IE and Automatica. He authored/co-authored 11 books in the field of control and artificial intelligence. He also held over 50 patents, and has given numerous keynote speeches and invited talks, chaired several conferences.</p>
+          </ul>
+        </div> -->
+
+          <h3 id="program-chairs">Program Chairs</h3>
+          <ul>
+            <li>Jinli Zhang, <em>Beijing University of Technology</em></li>
+            <li>Xuemin Lin, <em>The University of New South Wales</em></li>
+            <li>Yongduan Song, <em>Chongqing University</em></li>
+          </ul>
+
+          <!-- <h3 id="web-chair">Web Chair</h3>
+                  <ul>
+                    <li>Longtao Zhang, <em>University of Alabama at Birmingham</em></li>
+                  </ul>
+                  
+                  <h3 id="steering-committee">Steering Committee</h3>
+                  <ul>
+                    <li>Dingwen Tao, <em>Indiana University</em></li>
+                    <li>Sheng Di, <em>Argonne National Laboratory</em></li>
+                    <li>Xin Liang, <em>University of Kentucky</em></li>
+                  </ul> -->
+
+          <h3 id="program-committee-planned">Program Committee</h3>
+
+          <ul>
+            <li>Zheng Chen, <em>Osaka University</em></li>
+            <li>Zongli Jiang, <em>Beijing University of Technology</em></li>
+            <li>Dawei Zhou, <em>University of Illinois Urbana-Champaign (UIUC)</em></li>
+            <li>Chen Li, <em>Nagoya University</em></li>
+            <li>Leyi Wei, <em>Shandong University</em></li>
+            <li>Bo Song, <em>Drexel University</em></li>
+            <li>Chunyu Wang, <em>Harbin Institute of Technology</em></li>
+            <li>Zhiwei Liu, <em>Salesforce</em></li>
+            <li>Ning Yang, <em>Sichuan University</em></li>
+            <li>Yuan Ling, <em>Amazon</em></li>
+            <li>Haixing Zhao, <em>Qinghai Normal University</em></li>
+            <li>Jin Huang, <em>Tsinghua University</em></li>
+          </ul>
+
+          <h3 id="speakers">Speakers</h3>
+          <ul>
+            <li>Fuchun Sun, <em>Tsinghua University</em></li>
+            <li>Jiawei Zhang, <em>New York University</em></li>
+            <li>Fenglong Ma, <em>Pennsylvania State University</em></li>
+            <li>Lingfei Wu, <em>Pinterest</em></li>
+            <li>Wenpeng Yin, <em>Penn State University</em></li>
+            <li>Yasushi Sakurai, <em>Osaka University</em></li>
+          </ul>
+
+          <!-- <h3 id="contact-information">Contact information of the organizers</h3>
+          <ul>
+            <li>Jinli Zhang | Beijing University of Technology | No.100, Pingleyuan, Chaoyang District, Beijing China 100124 | <a href="jlzhangcs@bjut.edu.cn">jlzhangcs@bjut.edu.cn</a></li>
+            <li>Xuemin Lin | Antai College of Economics and Management, Shanghai Jiao Tong University | Huashan Road, Shanghai, 200030, China | <a href="xuemin.lin@sjtu.edu.cn">xuemin.lin@sjtu.edu.cn</a></li>
+            <li>Yongduan Song | Chongqing University | Shazheng Street174#, Shapingba District, Chongqing, 400044, China | <a href="ydsong@cqu.edu.cn">ydsong@cqu.edu.cn</a></li>
+          </ul> -->
+
+
+
+        </section>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+  <footer class="inner">
+
+    <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+  </footer>
+</div>
+
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', '280783166', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- </body> -->
+
+</html>
+
+<!-- </div> -->
+
+<!--index-->

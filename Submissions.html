@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <style>
+        /*兼容浏览器*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-left {
+            width: 20%;
+            height: 100%;
+            /* background-color: #9ec5d169; */
+            float: left;
+        }
+
+        .content-right {
+            width: 80%;
+            height: 100%;
+            /* height: 600px; */
+            /* background-color: #6495ED; */
+            float: left;
+            position: relative;
+            z-index: 9999
+        }
+
+
+        .left-title {
+            width: 100%;
+            height: 50px;
+        }
+
+        .left-title>a {
+            display: block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            /* color: white; */
+            /*去掉a下默认下划线*/
+            text-decoration: none;
+        }
+
+        /*分割线*/
+        .seg {
+            height: 1px;
+            width: 100%;
+            /* background-color: black; */
+        }
+
+        .nav {
+            /*上下5,左右0*/
+            margin: 5px 0;
+        }
+
+        /*菜单项主标题*/
+        .nav-title {
+            height: 40px;
+            width: 100%;
+            /* color: white; */
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        /*子标题内容区*/
+        .nav-content {
+            width: 100%;
+            height: 100%;
+            /* background-color: #0C1119; */
+        }
+
+        /*子标题的样式*/
+        .nav-content>a {
+            display: block;
+            width: 100%;
+            height: 30px;
+            /* color: #CCCCCC; */
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+            font-size: 13px;
+        }
+
+        /*子标题鼠标经过时的改变颜色*/
+        .nav-content>a:hover {
+            /* color: #FFFFFF; */
+            /* background-color: #12040c; */
+        }
+
+        /*内容区*/
+        .content-right {
+            /* font-size: 0px; */
+            /* line-height: 10px; */
+            /* text-align: center; */
+        }
+    </style>
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+    <title>The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models | held
+        with 2026 IEEE International Conference on Big Data</title>
+    <meta name="generator" content="Jekyll v3.9.3" />
+    <meta property="og:title"
+        content="The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="held with 2026 IEEE International Conference on Big Data" />
+    <meta property="og:description" content="held with 2026 IEEE International Conference on Big Data" />
+    <link rel="canonical" href="https://rhwbrhw.github.io/" />
+    <meta property="og:url" content="https://rhwbrhw.github.io/" />
+    <meta property="og:site_name"
+        content="The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title"
+        content="The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models" />
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"held with 2026 IEEE International Conference on Big Data","headline":"The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models","name":"The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models","url":"https://rhwbrhw.github.io/"}</script>
+    <!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+    <!-- <ul class="sidebar">
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#Submissions">Submissions</a></li>
+      <li><a href="#topics-of-interest">Topics of Interest</a></li>
+      <li><a href="#proceedings">Proceedings</a></li>
+      <li><a href="#submission-instructions">Submission Instructions</a></li>
+      <li><a href="#important-dates">Important Dates</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      
+    </ul> -->
+
+
+
+
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+            <h1 id="project_title">The 4th International Workshop on Exploring Cutting-edge Data Mining: Applications of Infrared Target Detection and Large Language Models</h1>
+
+            <!-- <script src = "jquery-3.6.0.js"></script> -->
+
+
+            <!-- <script src = "https://code.jquery.com/jquery-3.2.1.min.js"
+                  integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                  crossorigin = "anonymous"></script> -->
+
+            <!-- <script>
+              $(function () {
+  
+                  //隐藏所有子标题
+                  $(".nav-menu").each(function () {
+                      $(this).children(".nav-content").hide();
+                  });
+  
+                  //给菜单项中的所有主标题绑定事件
+                  $(".nav-title").each(function () {
+                      //获取点击当前标签下所有子标签
+                      var navConEle = $(this).parents(".nav-menu").children(".nav-content");
+  
+                      //绑定点击事件,判断navConEle的display这个属性是否为none,时none的话时隐藏状态
+                      $(this).click(function(){
+                          if (navConEle.css("display") != "none") {
+                              //隐藏,传参数自带动画,单位为毫秒
+                              navConEle.hide(300);
+                          } else {
+                              //显示,传参数自带动画,单位为毫秒
+                              $(".nav-menu").each(function () {
+                                  $(this).children(".nav-content").hide(300);
+                              });
+                              navConEle.show(300);
+                          }
+                      });
+                  });
+  
+                  $(".nav-content>a").each(function () {
+                      $(this).click(function () {
+                          $(".content-right").html($(this).html());
+                      });
+                  });
+  
+              });
+          </script> -->
+        </header>
+    </div>
+
+    <!--index-->
+    <div class="content">
+        <!--左侧导航栏-->
+        <div class="content-left">
+            <div id="main_content_wrap" class="outer">
+                <section id="main_content" class="inner">
+                    <!-- <div class = "left-title">
+                  <a href = "#">xx后台</a>
+              </div> -->
+
+                    <!--水平线-->
+                    <div class="seg"></div>
+
+                    <!--菜单栏导航-->
+                    <div class="nav">
+                        <!--每一个菜单栏项-->
+                        <div class="nav-menu">
+                            <!--主标题-->
+                            <div class="nav-title"><a href="index.html">Introduction</a></div>
+                            <!-- 子标题
+                      <div class = "nav-content">
+                          <a href = "#">商品列表</a>
+                          <a href = "#">添加商品</a>
+                      </div> -->
+                        </div>
+
+                        <!--每一个菜单栏项-->
+                        <div class="nav-menu">
+                            <!--主标题-->
+                            <div class="nav-title"><a href="Submissions.html">Submissions</a></div>
+                            <!-- 子标题
+                      <div class = "nav-content">
+                          <a href = "#">订单查看</a>
+                          <a href = "#">订单排序</a>
+                      </div> -->
+                        </div>
+
+                        <!--每一个菜单栏项-->
+                        <div class="nav-menu">
+                            <!--主标题-->
+                            <div class="nav-title"><a href="Organizers.html">Organizers</a></div>
+                            <!-- 子标题
+                      <div class = "nav-content">
+                          <a href = "#">类目查看</a>
+                          <a href = "#">类目删除</a>
+                      </div> -->
+                        </div>
+                        <div class="nav-menu">
+                            <!--主标题-->
+                            <div class="nav-title"><a href="keynotespeaker.html">Keynote Speakers</a></div>
+                            <!-- 子标题
+                              <div class = "nav-content">
+                                  <a href = "#">类目查看</a>
+                                  <a href = "#">类目删除</a>
+                              </div> -->
+                            </div>
+                        <div class="nav-menu">
+                            <!--主标题-->
+                            <div class="nav-title"><a href="pastworkshopd.html">Past Workshops</a></div>
+                            <!-- 子标题
+                              <div class = "nav-content">
+                                  <a href = "#">类目查看</a>
+                                  <a href = "#">类目删除</a>
+                              </div> -->
+                            </div>
+                    </div>
+                </section>
+            </div>
+
+            <!--水平线-->
+            <div class="seg"></div>
+        </div>
+
+        <!--右侧内容区-->
+        <div class="content-right">
+            <!-- MAIN CONTENT -->
+            <div id="main_content_wrap" class="outer">
+                <section id="main_content" class="inner">
+                    <p><img src="image/bigdata_1.jpg" alt="Branching" /></p>
+                    <h1 id="submissions">Submissions</h1>
+
+                    <h3 id="topics-of-interest">Topics of Interest</h3>
+
+                    <p>Topics of interest include, but are not limited to:</p>
+
+                    <ul>
+                        <li>Data mining and AI applications for Graphs</li>
+                        <li>Data mining approaches in social attributed networks and natural language processing</li>
+                        <li>Dealing with the heterogeneity of the data</li>
+                        <li>Data mining for healthcare and biological science</li>
+                        <li>Handling dynamic and changing data</li>
+                        <li>Security data fusion (e.g., event correlation) across multiple data sources</li>
+                        <li>Knowledge discovery and data mining</li>
+                        <li>Modelling and simulation of cyber systems and system components</li>
+                        <li>Event correlation and anomaly detection</li>
+                        <li>Addressing each of these issues at scale</li>
+                        <li>Infrared object detection</li> 
+                        <li>Infrared small target detection</li>
+                        <li>Small object detection</li>
+                        <li>Large language model applications</li>
+                        <li>Ai agent</li>
+                        <li>Knowledge Editing for Large Language Models</li>
+                        <li>Graph Structure Modeling with LLMs</li>
+                    </ul>
+
+                    <h3 id="proceedings">Proceedings</h3>
+
+                    <p>All papers accepted for this workshop will be published in the Workshop Proceedings of IEEE Big
+                        Data Conference, made available in the IEEE eXplore digital library.</p>
+
+                    <h3 id="submission-instructions">Submission Instructions</h3>
+
+                    <ul>
+                        <li>Camera-ready version of accepted papers must be compliant with the IEEE Xplore format for
+                            publication.</li>
+                        <li>Submissions must be in PDF format (see link to <a href="https://www3.cs.stonybrook.edu/~ieeebigdata2026/CallPapers.html">Formatting Instructions</a>).</li>
+                        <li>Submissions are required to be within <strong>6 pages</strong> for short paper or <strong>10
+                                pages</strong> for full paper (including references).</li>
+                        <li>Submissions must be single-spaced, 2-column pages in IEEE Xplore format.</li>
+                        <li>Submissions are NOT double-blind.</li>
+                        <li>Only web-based submissions are allowed.</li>
+                        <li>All submission deadlines are Anywhere on Earth (AOE).</li>
+                        <li>Please submit your paper via the submission system.</li>
+                        <li>Submission link: <a
+                                href="https://wi-lab.com/cyberchair/2026/bigdata26/scripts/ws_submit.php">Cyberchair
+                                submissions website</a>.</li>
+                    </ul>
+
+                    <h3 id="important-dates">Important Dates</h3>
+
+                    <ul>
+                        <li>Oct. 1, 2026: Electronic submission of full papers</li>
+                        <li>Oct. 30, 2026: Notification of paper acceptance</li>
+                        <li>Nov. 10, 2026: Camera-ready of accepted papers</li>
+                        <li>Nov. 23, 2026: Registration Account</li>
+                        <li>Dec. 8-11, 2026: IEEE Big Data Conference</li>
+                        <li>Dec. 8-11, 2026: Workshop</li>
+                    </ul>
+
+                    <h3 id="schedule">Schedule</h3>
+                    <p>This meeting will be held online, and the meeting will take place on ZOOM.</p>
+
+                    <p>Meeting Address: <a href="https://us05web.zoom.us/j/85791139689?pwd=YJhCyyN82YNzGWWvaTwfqTT9MihCjd.1">https://us05web.zoom.us/j/85791139689?pwd=YJhCyyN82YNzGWWvaTwfqTT9MihCjd.1</a></p>
+
+                    <p>Password: 0Wj3sK</p>
+
+                    <p>The meeting will start at 9:00 AM Eastern Time, Dec.11, 2026.</p>
+                    <table>
+                    <thead>
+                        <tr>
+                        <th>Time</th>
+                        <th>Session</th>
+                        <th>Speaker(s)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>9:00 AM - 9:30 AM</td>
+                        <td>Biased Random Walks with multiple-particle for Mining vital Clique Structures in Higher-Order Networks</td>
+                        <td>Jinyang Lv</td>
+                        </tr>
+                        <tr>
+                        <td>9:35 AM - 10:05 AM</td>
+                        <td>Med-Align: Zero-Shot Histopathological Image Classification via Adaptive Multimodal Feature Alignment</td>
+                        <td>Xueyan Bai</td>
+                        </tr>
+                        <tr>
+                        <td>10:10 AM - 10:40 AM</td>
+                        <td>KTD-Net: A Synergistic Diffusion Framework with Gated Knowledge-Transfer Transformer for Abdominal Multi-Organ Segmentation in CT Images</td>
+                        <td>Kang Fu</td>
+                        </tr>
+                        <tr>
+                        <td>10:45 AM - 11:15 AM</td>
+                        <td>Met-Diff: A Diffusion Model-based with Multi-Organ Segmentation in Abdominal CT of Metabolic Syndrome Patients</td>
+                        <td>Jinkui Li</td>
+                        </tr>
+                        <tr>
+                        <td>11:20 AM - 11:50 AM</td>
+                        <td>Interpretable Infrared Target Detection via Multi-Scale Robust Principle Component Analysis</td>
+                        <td>Zhanrong Zhao</td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <h3 id="Registration">Registration</h3>
+                    <p>Each paper needs to have at least one full registration in order to get your paper published in
+                        the conference proceedings. If you are a student author and you are the only one to register for
+                        the paper, then you need to pay the full registration, not the student registration. The author
+                        registration deadline is 23:59, November 23, 2026 (AoE). If you pay by wire-transfer, pls note that wire-transfer
+                        normally take about 10 days to actually transfer the fund from your bank account to the IEEE
+                        BigData 2026 account, make sure your payment is received by Nov 22, otherwise your paper won't
+                        be published in the conference proceedings. Pls follow the
+                        <a
+                            href='https://ieeebigdata2026.scimeeting.cn/en/web/index/31202_2699395'>registration
+                            link</a> from for the online registration
+                    </p>
+
+                    <h3 id="reserved">Reserved Rooms</h3>
+                    <p>The conference has reserved rooms with discounted rate for the participants. To book the hotel
+                        rooms using the conference discount rate, please follow the <a
+                            href='https://mm.scimeeting.cn/en/web/index/31202_2699393'>links</a>
+                    </p>
+
+                    <h3 id="travel awards">Travel Awards</h3>
+<!--                     <p>The conference will offer 25 student travel awards to student authors. Please email Dr. Yuan An
+                        at ya45@drexel.edu the following materials before the deadline Nov 22, 2023: your name,
+                        affiliation, supporting letter from your advisor or dept chair, paper id and title, registration
+                        receipt.</p> -->
+                    <p>TBA...</p>
+
+                    <h3 id="visa invitation letter">Visa Invitation Letter</h3>
+                    <p>If you do need a visa invitation letter, you need to register the conference. In the online
+                        registration process, it will ask you whether you need a visa invitation letter or not. After
+                        you complete the registration payment, the registration invoice and visa invitation letter will
+                        be sent to you by email. </p>
+
+
+                    <h3 id="notice">Notice</h3>
+                    <ul>
+                        <li>
+                            <p>final camera-ready paper submission deadline is Nov 26, 2026, pls don't miss the
+                                deadline, otherwise your paper won't be published in the conference proceedings.
+<!--                                 , Pls
+                                follow the URL for the <a
+                                    href='https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwi-lab.com%2Fcyberchair%2F2023%2Fbigdata23%2Findex.php&data=05%7C01%7Crcpaffenroth%40wpi.edu%7Cbcf1c6043750487c5f6608dbddba441d%7C589c76f5ca1541f9884b55ec15a0672a%7C0%7C0%7C638347564347292795%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=Ell4YhM7FLMiIQ%2FDWItD%2FXnu4kzYMfdbHW7SHPR5vfg%3D&reserved=0'>camera-ready
+                                    paper submission</a>. -->
+                            </p>
+                        </li>
+                        <li>
+                            <p>Regular Papers should have 10 pages, including all figures, tables, and references.</p>
+                        </li>
+                        <li>
+                            <p>Regular paper need to prepare 20 minutes oral presentation (about 15 minutes for talk and
+                                5 minutes for Q and A)</p>
+                        </li>
+                    </ul>
+                    <p><strong>PURCHASING EXTRA PAGES:</strong> The authors could purchase two extra pages if necessary
+                        with US$100 per page.</p>
+
+
+
+
+
+                </section>
+            </div>
+
+        </div>
+    </div>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+        <footer class="inner">
+
+            <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        </footer>
+    </div>
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', '280783166', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
+
+</div>
+
+<!--index-->
